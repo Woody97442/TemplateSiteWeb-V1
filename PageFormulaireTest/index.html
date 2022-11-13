@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="topbar">
+                <div class="title">
+                    <img src='./images/afpar-reunion-logo.png' alt='logoAFPAR' class="logoAFPAR">
+                    <h1>&nbspSondage AFPAR</h1>
+                </div>
+
+                <div class="compte">
+                    <a href="">Mon Compte</a>
+                    <img src='./images/Avatar.jpg' alt='avatar' class="avatarlogo">
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="fullwidth">
+        <div class="container">
+
+            <form method="get" action="http://www.afpar.com" class="formulaire">
+
+                <div class="border_form">
+
+                    <div class="top">
+                        <h2>Nous lançons une grande enquête sur les anciens stagiaires</h2>
+                        <h3>merci de nous répondre</h3>
+                        <hr>
+                    </div>
+    
+                    <div class="formcenter">
+                        <div class="left">
+                            <div class="formrow">
+                                <div class="formlabel" >
+                                    Votre nom*
+                                </div>
+                                <div class="formitem">
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel" >
+                                    Votre prénom*
+                                </div>
+                                <div class="formitem">
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre date de naissance
+                                </div>
+                                <div class="formitem">
+                                    <input type="date" >
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre adresse
+                                </div>
+                                <div class="formitem">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre ville
+                                </div>
+                                <div class="formitem">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre code postal
+                                </div>
+                                <div class="formitem">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="right">
+
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre E-mail*
+                                </div>
+                                <div class="formitem">
+                                    <input type="email" required>
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Vous êtes
+                                </div>
+                                <div class="formitem">
+                                    <div>
+                                        <div>
+                                            Un homme <input type="radio" name="sexe" id="sexe" value="homme">
+                                        </div>
+                                        <div>
+                                            Une femme <input type="radio" name="sexe" id="sexe" value="femme">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Votre mêtier
+                                </div>
+                                <div class="formitem">
+                                    <select name="metier" id="metier">
+                                        <option value="dev">Développeur</option>
+                                        <option value="maçon">Maçon</option>
+                                        <option value="formateur">Formateur</option>
+                                        <option value="soudeur">Soudeur</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Si vous avez répondu autre, préciser
+                                </div>
+                                <div class="formitem">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="formrow">
+                                <div class="formlabel">
+                                    Rémunération
+                                </div>
+                                <div class="formitem">
+                                    <select name="salaire" id="salaire">
+                                        <option value="sa1000">&#60;1000 &euro;</option>
+                                        <option value="sa1300">&#60;1300 &euro;</option>
+                                        <option value="sa1500">&#60;1500 &euro;</option>
+                                        <option value="sa1800">&#60;1800 &euro;</option>
+                                        <option value="sa2000">&#60;2000 &euro;</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <p>Quand avez-vous terminé le stage AFPAR &nbsp<input type="date" required></p>
+    
+                        <textarea name="message" id="message" rows="5" maxlength="50" placeholder="Vos commentaires"></textarea>
+
+                        <hr>
+                        <h3>Merci d'avoir répondu au questionnaire</h3>
+    
+                        <div>
+                            <button type="submit" value="validez">validez</button>
+                            <button type="cancel" value="cancel">Annulez</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="footerbox">
+                <h3>En partenariat avec : &nbsp</h3>
+                <div class="logobox">
+                    <img src='./images/Logo_Météo_France.png' alt='logo'>
+                    <img src='./images/SFR_logo.png' alt='logo'>
+                    <img src='./images/afpar-reunion-logo.png' alt='logo'>
+                    <img src='./images/Avatar.jpg' alt='logo'>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>
